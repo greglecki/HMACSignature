@@ -25,6 +25,7 @@ namespace HMACSignature.WebAPIService.Filters
         {
             if (allowedApps.Count == 0)
             {
+                // Make sure the AppID and secure Key maches the data in client's HMACDelegatingHandler file
                 allowedApps.Add("4d53bce03ec34c0a911182d4c228ee6c", "A93reRTUJHsCuQSHR+L3GxqOJyDmQpCgps102ciuabc=");
             }
         }
